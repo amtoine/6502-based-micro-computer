@@ -36,6 +36,7 @@
 | 8K ROM                  | [28C64A-15]           |                   |
 | LCD                     | http://bit.ly/2O1ReCu |                   |
 | 74HC00                  | http://bit.ly/30e5mLf | [SN74HC00NE4]     |
+| 74LS30                  |                       | [SN74LS30NE4]     |
 | 1MHz crystal oscillator | http://bit.ly/2NWaDVj |                   |
 | 10Kohm potentiometer    | http://bit.ly/2AsCaG1 |                   |
 | tact switch             | http://bit.ly/2AdNLZc |                   |
@@ -73,3 +74,4 @@
 [FG18X7R1E105KRT00]: https://www.mouser.fr/ProductDetail/TDK/FG18X7R1E105KRT00?qs=sGAEpiMZZMukHu%252BjC5l7YTvFF0ytHSxtoC4NbnbovTo%3D
 [561R10TCCQ30]: https://www.mouser.fr/ProductDetail/Vishay/561R10TCCQ30?qs=sGAEpiMZZMukHu%252BjC5l7YQBS4TczbHi4IrZt%2Fqz%2FGVA%3D
 [VR37000001004FR500]: https://www.mouser.fr/ProductDetail/Vishay-BC-Components/VR37000001004FR500?qs=Iqe6t0HYRD4lz%252B2cDrCA1g%3D%3D
+[SN74LS30NE4]: https://www.mouser.fr/ProductDetail/Texas-Instruments/SN74LS30NE4?qs=SL3LIuy2dWwsgWE7AHV5lg%3D%3D
