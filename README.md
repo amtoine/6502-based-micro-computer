@@ -23,3 +23,23 @@
 >
 > legend of the range column:
 > - `.`: either $0$ or $1$
+
+## Hardware parts
+
+| name                    | jameco                |
+| ----------------------- | --------------------- |
+| W65C02                  | http://bit.ly/30ecZBs |
+| W65C22                  | http://bit.ly/30iR4sG |
+| 8K ROM                  | [28C64A-15]           |
+| 32K RAM                 | http://bit.ly/300bxai |
+| LCD                     | http://bit.ly/2O1ReCu |
+| 74HC00                  | http://bit.ly/30e5mLf |
+| 1MHz crystal oscillator | http://bit.ly/2NWaDVj |
+| 10Kohm potentiometer    | http://bit.ly/2AsCaG1 |
+| tact switch             | http://bit.ly/2AdNLZc |
+| red LED                 | http://bit.ly/2NZTDgN |
+| 220ohm                  | http://bit.ly/2Qc5gUw |
+| 1Kohm                   | http://bit.ly/2AjJzHj |
+| 0.1pF                   | http://bit.ly/30edWtw |
+
+[28C64A-15]: https://www.jameco.com/z/AT28C64B-15P-Major-Brands-IC-28C64A-15-EEPROM-64K-Bit-CMOS_74827.html
