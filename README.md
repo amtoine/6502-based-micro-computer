@@ -25,21 +25,51 @@
 > - `.`: either $0$ or $1$
 
 ## Hardware parts
+### Main computer
+| name                    | jameco                | mouser            |
+| ----------------------- | --------------------- | ----------------- |
+| CPU                     | http://bit.ly/30ecZBs | [W65C02S6TPG-14]  |
+| VIA                     | http://bit.ly/30iR4sG | [W65C22N6TPG-14]  |
+| ACIA                    |                       | [W65C51N6TPG-14]  |
+| 32K RAM                 | http://bit.ly/300bxai | [AS6C62256-55PCN] |
+| 32K ROM                 |                       | [AT28C256-15PU]   |
+| 8K ROM                  | [28C64A-15]           |                   |
+| LCD                     | http://bit.ly/2O1ReCu |                   |
+| 74HC00                  | http://bit.ly/30e5mLf | [SN74HC00NE4]     |
+| 1MHz crystal oscillator | http://bit.ly/2NWaDVj |                   |
+| 10Kohm potentiometer    | http://bit.ly/2AsCaG1 |                   |
+| tact switch             | http://bit.ly/2AdNLZc |                   |
+| red LED                 | http://bit.ly/2NZTDgN |                   |
+| 220ohm                  | http://bit.ly/2Qc5gUw |                   |
+| 1Kohm                   | http://bit.ly/2AjJzHj |                   |
+| 0.1pF                   | http://bit.ly/30edWtw |                   |
 
-| name                    | jameco                |
-| ----------------------- | --------------------- |
-| W65C02                  | http://bit.ly/30ecZBs |
-| W65C22                  | http://bit.ly/30iR4sG |
-| 8K ROM                  | [28C64A-15]           |
-| 32K RAM                 | http://bit.ly/300bxai |
-| LCD                     | http://bit.ly/2O1ReCu |
-| 74HC00                  | http://bit.ly/30e5mLf |
-| 1MHz crystal oscillator | http://bit.ly/2NWaDVj |
-| 10Kohm potentiometer    | http://bit.ly/2AsCaG1 |
-| tact switch             | http://bit.ly/2AdNLZc |
-| red LED                 | http://bit.ly/2NZTDgN |
-| 220ohm                  | http://bit.ly/2Qc5gUw |
-| 1Kohm                   | http://bit.ly/2AjJzHj |
-| 0.1pF                   | http://bit.ly/30edWtw |
+### Serial interface
+| name                         | jameco                | mouser                 |
+| ---------------------------- | --------------------- | ---------------------- |
+| RS-232 interface             |                       | [MAX232CPE+]           |
+| DB9F2 adapter                |                       | [58124-1295]           |
+| 1.8432MHz crystal oscillator |                       | [ECS-2100AX-1.8432MHZ] |
+| 1uF MLCC capacitor           |                       | [FG18X7R1E105KRT00]    |
+| 30pf capacitor               |                       | [561R10TCCQ30]         |
+| 1M resistor                  |                       | [VR37000001004FR500] |
+
+### PS/2 protocol buffer
+
+> **TODO**
+
 
 [28C64A-15]: https://www.jameco.com/z/AT28C64B-15P-Major-Brands-IC-28C64A-15-EEPROM-64K-Bit-CMOS_74827.html
+
+[W65C51N6TPG-14]: https://www.mouser.fr/ProductDetail/Western-Design-Center-WDC/W65C51N6TPG-14?qs=AgbsAOSw7WDdUCKSkUixbw%3D%3D
+[W65C02S6TPG-14]: https://www.mouser.fr/ProductDetail/Western-Design-Center-WDC/W65C02S6TPG-14?qs=opBjA1TV903lvWo9AEKH5w%3D%3D
+[W65C22N6TPG-14]: https://www.mouser.fr/ProductDetail/Western-Design-Center-WDC/W65C22N6TPG-14?qs=opBjA1TV901DbgJ9rfcBoQ%3D%3D
+[AS6C62256-55PCN]: https://www.mouser.fr/ProductDetail/Alliance-Memory/AS6C62256-55PCN?qs=LD2UibpCYJqgbIupMJnGTQ%3D%3D
+[AT28C256-15PU]: https://www.mouser.fr/ProductDetail/Microchip-Technology/AT28C256-15PU?qs=MAR%2F2X5XOp7eAU2%2FlNw9oA%3D%3D
+[SN74HC00NE4]: https://www.mouser.fr/ProductDetail/Texas-Instruments/SN74HC00NE4?qs=mE33ZKBHyE4uNJ8383x2vg%3D%3D
+[MAX232CPE+]: https://www.mouser.fr/ProductDetail/Analog-Devices-Maxim-Integrated/MAX232CPE%2B?qs=1THa7WoU59H6WLBcdj%252BTOQ%3D%3D
+[58124-1295]: https://www.mouser.fr/ProductDetail/CCS/58124-1295?qs=17u8i%2FzlE89zr48r6Br%252BoA%3D%3D
+[ECS-2100AX-1.8432MHZ]: https://www.mouser.fr/ProductDetail/ECS/ECS-2100AX-1.8432MHZ?qs=7cQpS2oZOEMv8URpRm%2FrTg%3D%3D
+[FG18X7R1E105KRT00]: https://www.mouser.fr/ProductDetail/TDK/FG18X7R1E105KRT00?qs=sGAEpiMZZMukHu%252BjC5l7YTvFF0ytHSxtoC4NbnbovTo%3D
+[561R10TCCQ30]: https://www.mouser.fr/ProductDetail/Vishay/561R10TCCQ30?qs=sGAEpiMZZMukHu%252BjC5l7YQBS4TczbHi4IrZt%2Fqz%2FGVA%3D
+[VR37000001004FR500]: https://www.mouser.fr/ProductDetail/Vishay-BC-Components/VR37000001004FR500?qs=Iqe6t0HYRD4lz%252B2cDrCA1g%3D%3D
