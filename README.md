@@ -1,5 +1,15 @@
-## Memory map
-### Overall view
+## Table of contents
+- [_Memory map_](#memory-map-toc)
+    - [_Overall view_](#overall-view-toc)
+    - [_The IO page_](#the-io-page-toc)
+- [_Hardware parts_](#hardware-parts-toc)
+    - [_Main computer_](#main-computer-toc)
+    - [_Serial interface_](#serial-interface-toc)
+    - [_PS/2 protocol buffer_](#ps2-protocol-buffer-toc)
+    - [_Chip sockets_](#chip-sockets-toc)
+
+## Memory map [[TOC](#table-of-contents)]
+### Overall view [[TOC](#table-of-contents)]
 | start  | end    | type         | pages | range ($a_{15} - a_{0}$) | logic                                                     |
 | ------ | ------ | ------------ | ----- | ------------------------ | --------------------------------------------------------- |
 | `0000` | `7EFF` | $\text{RAM}$ | $127$ | `0zzz zzzz .... ....`    | $\overline{a_{15}}\sum\limits_{i = 8}^{14}\overline{a_i}$ |
@@ -12,7 +22,7 @@
 > - `.`: either $0$ or $1$
 > - `zzz`: any bit set to $0$
 
-### The IO page
+### The IO page [[TOC](#table-of-contents)]
 | start | end  | type          | sub-pages | range ($a_{7} - a_{0}$) | logic                                                              |
 | ----- | ---- | ------------- | --------- | ----------------------- | ------------------------------------------------------------------ |
 | `00`  | `0F` | $\text{VIA1}$ | $1$       | `0000 ....`             | $\overline{a_{7}}\overline{a_{6}}\overline{a_{5}}\overline{a_{4}}$ |
@@ -24,8 +34,8 @@
 > legend of the range column:
 > - `.`: either $0$ or $1$
 
-## Hardware parts
-### Main computer
+## Hardware parts [[TOC](#table-of-contents)]
+### Main computer [[TOC](#table-of-contents)]
 | name                    | jameco                | mouser            |
 | ----------------------- | --------------------- | ----------------- |
 | CPU                     | http://bit.ly/30ecZBs | [W65C02S6TPG-14]  |
@@ -44,7 +54,7 @@
 | 1Kohm                   | http://bit.ly/2AjJzHj |                   |
 | 0.1pF                   | http://bit.ly/30edWtw |                   |
 
-### Serial interface
+### Serial interface [[TOC](#table-of-contents)]
 | name                         | jameco                | mouser                 |
 | ---------------------------- | --------------------- | ---------------------- |
 | ACIA                         |                       | [W65C51N6TPG-14]       |
@@ -55,11 +65,11 @@
 | 30pf capacitor               |                       | [561R10TCCQ30]         |
 | 1M resistor                  |                       | [VR37000001004FR500]   |
 
-### PS/2 protocol buffer
+### PS/2 protocol buffer [[TOC](#table-of-contents)]
 
 > **TODO**
 
-### Chip sockets
+### Chip sockets [[TOC](#table-of-contents)]
 
 | pins | jameco | mouser                                 |
 | ---- | ------ | -------------------------------------- |
