@@ -64,7 +64,7 @@
 | pins | jameco | mouser                                 |
 | ---- | ------ | -------------------------------------- |
 | 40   |        | [1-2199299-5] / [111-93-640-41-001000] |
-| 28   |        | [4828-3004-CP]                         |
+| 28   |        | [1-2199298-9] / [4828-3004-CP]                         |
 | 16   |        | [1-2199298-4]                          |
 | 14   |        | [1-2199298-3]                          |
 
@@ -87,6 +87,7 @@
 
 [1-2199299-5]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199299-5?qs=fK8dlpkaUMthXjoyadQV1Q%3D%3D
 [111-93-640-41-001000]: https://www.mouser.fr/ProductDetail/Mill-Max/111-93-640-41-001000?qs=WZeyYeqMOWdiMTxI6nZMPA%3D%3D
+[1-2199298-9]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199298-9?qs=fK8dlpkaUMumZ9haKKccEA%3D%3D
 [4828-3004-CP]: https://www.mouser.fr/ProductDetail/3M-Electronic-Solutions-Division/4828-3004-CP?qs=mroHWPoUHBolYNJsg4b2PQ%3D%3D
 [1-2199298-4]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199298-4?qs=fK8dlpkaUMvpL10rY9Abiw%3D%3D
 [1-2199298-3]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199298-3?qs=fK8dlpkaUMtBOtVI99wRlQ%3D%3D
