@@ -59,6 +59,15 @@
 
 > **TODO**
 
+### Chip sockets
+
+| pins | jameco | mouser                                 |
+| ---- | ------ | -------------------------------------- |
+| 40   |        | [1-2199299-5] / [111-93-640-41-001000] |
+| 28   |        | [4828-3004-CP]                         |
+| 16   |        | [1-2199298-4]                          |
+| 14   |        | [1-2199298-3]                          |
+
 
 [28C64A-15]: https://www.jameco.com/z/AT28C64B-15P-Major-Brands-IC-28C64A-15-EEPROM-64K-Bit-CMOS_74827.html
 
@@ -75,3 +84,9 @@
 [561R10TCCQ30]: https://www.mouser.fr/ProductDetail/Vishay/561R10TCCQ30?qs=sGAEpiMZZMukHu%252BjC5l7YQBS4TczbHi4IrZt%2Fqz%2FGVA%3D
 [VR37000001004FR500]: https://www.mouser.fr/ProductDetail/Vishay-BC-Components/VR37000001004FR500?qs=Iqe6t0HYRD4lz%252B2cDrCA1g%3D%3D
 [SN74LS30NE4]: https://www.mouser.fr/ProductDetail/Texas-Instruments/SN74LS30NE4?qs=SL3LIuy2dWwsgWE7AHV5lg%3D%3D
+
+[1-2199299-5]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199299-5?qs=fK8dlpkaUMthXjoyadQV1Q%3D%3D
+[111-93-640-41-001000]: https://www.mouser.fr/ProductDetail/Mill-Max/111-93-640-41-001000?qs=WZeyYeqMOWdiMTxI6nZMPA%3D%3D
+[4828-3004-CP]: https://www.mouser.fr/ProductDetail/3M-Electronic-Solutions-Division/4828-3004-CP?qs=mroHWPoUHBolYNJsg4b2PQ%3D%3D
+[1-2199298-4]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199298-4?qs=fK8dlpkaUMvpL10rY9Abiw%3D%3D
+[1-2199298-3]: https://www.mouser.fr/ProductDetail/TE-Connectivity/1-2199298-3?qs=fK8dlpkaUMtBOtVI99wRlQ%3D%3D
