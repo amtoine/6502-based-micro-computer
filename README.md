@@ -12,7 +12,7 @@
 ### Overall view [[TOC](#table-of-contents)]
 | start  | end    | type         | pages | range ($a_{15} - a_{0}$) | logic                                                     |
 | ------ | ------ | ------------ | ----- | ------------------------ | --------------------------------------------------------- |
-| `0000` | `7EFF` | $\text{RAM}$ | $127$ | `0zzz zzzz .... ....`    | $\overline{a_{15}}\sum\limits_{i = 8}^{14}\overline{a_i}$ |
+| `0000` | `7EFF` | $\text{RAM}$ | $127$ | `0zzz zzzz .... ....`    | $\overline{a_{15}}\sum\limits_{i = 8}^{14}\overline{a_i} = \overline{\prod\limits_{i = 8}^{14}a_i}$ |
 | `7F00` | `7FFF` | $\text{IO}$  |   $1$ | `0111 1111 .... ....`    | $\overline{a_{15}}\prod\limits_{i = 8}^{14}a_i$           |
 | `8000` | `FFFF` | $\text{ROM}$ | $128$ | `1... .... .... ....`    | $a_{15}$                                                  |
 
