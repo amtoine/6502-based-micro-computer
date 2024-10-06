@@ -20,7 +20,7 @@
 >
 > legend of the range column:
 > - `.`: either $0$ or $1$
-> - `zzz`: any bit set to $0$
+> - `zzz`: at least one bit set to $0$
 
 ### The IO page [[TOC](#table-of-contents)]
 | start | end  | type          | sub-pages | range ($a_{7} - a_{0}$) | logic                                                              |
