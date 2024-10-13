@@ -6,14 +6,15 @@ const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
 
 #define BAUD_RATE 57600
 
-void setup() {
-    for (int n = 0; n < 16; n += 1) {
-        pinMode(ADDR[n], INPUT);
+void init_bus(char* bus, int size, int mode) {
+    for (int n = 0; n < size; n += 1) {
+        pinMode(bus[n], mode);
     }
+}
 
-    for (int n = 0; n < 8; n += 1) {
-        pinMode(DATA[n], INPUT);
-    }
+void setup() {
+    init_bus(ADDR, 16, INPUT);
+    init_bus(DATA, 8, INPUT);
 
     pinMode(CLK, INPUT);
     pinMode(RW, INPUT);
