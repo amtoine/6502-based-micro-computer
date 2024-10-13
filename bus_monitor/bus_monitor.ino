@@ -1,5 +1,13 @@
+// because of the number of pins involded, a board like the Arduino MEGA is
+// well-suited for running this project.
+
+// buses from the 65c02
+//
+// from MSB to LSB
 const char ADDR[] = {22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52};
 const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
+
+// additional pins from the 65c02 chip
 #define CLK 2
 #define RW 3
 #define IRQB 4
