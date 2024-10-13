@@ -45,7 +45,7 @@ void onClock() {
       "   %04x  %c %c %02x",
       address,
       digitalRead(RW) ? 'r' : 'W',
-      digitalRead(IRQB) ? '.' : 'I',
+      digitalRead(IRQB) ? ' ' : 'I',
       data
     );
     Serial.println(output);
