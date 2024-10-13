@@ -24,22 +24,20 @@ void setup() {
     Serial.begin(BAUD_RATE);
 }
 
-void onClock() {
-    unsigned int address = 0;
-    for (int n = 0; n < 16; n += 1) {
-       int bit = digitalRead(ADDR[n]) ? 1 : 0;
+unsigned int read_and_print_binary(char* pins, int size) {
+    unsigned int value = 0;
+    for (int n = 0; n < size; n += 1) {
+       int bit = digitalRead(pins[n]) ? 1 : 0;
        Serial.print(bit);
-       address = (address << 1) + bit;
+       value = (value << 1) + bit;
     }
+    return value;
+}
 
+void onClock() {
+    unsigned int address = read_and_print_binary(ADDR, 16);
     Serial.print("   ");
-
-    unsigned int data = 0;
-    for (int n = 0; n < 8; n += 1) {
-        int bit = digitalRead(DATA[n]) ? 1 : 0;
-        Serial.print(bit);
-        data = (data << 1) + bit;
-    }
+    unsigned int data = read_and_print_binary(DATA, 8);
 
     char output[15];
     sprintf(
