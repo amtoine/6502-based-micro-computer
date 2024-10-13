@@ -3,6 +3,7 @@ const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
 #define CLK 2
 #define RW 3
 #define IRQB 4
+#define RESB 5
 
 #define BAUD_RATE 57600
 
@@ -19,6 +20,7 @@ void setup() {
     pinMode(CLK, INPUT);
     pinMode(RW, INPUT);
     pinMode(IRQB, INPUT);
+    pinMode(RESB, INPUT);
 
     attachInterrupt(digitalPinToInterrupt(CLK), onClock, RISING);
 
@@ -40,13 +42,14 @@ void onClock() {
     Serial.print("   ");
     unsigned int data = read_and_print_binary(DATA, 8);
 
-    char output[15];
+    char output[16];
     sprintf(
       output,
-      "   %04x  %c %c %02x",
+      "   %04x  %c %c %c %02x",
       address,
       digitalRead(RW) ? 'r' : 'W',
       digitalRead(IRQB) ? ' ' : 'I',
+      digitalRead(RESB) ? ' ' : 'R',
       data
     );
     Serial.println(output);
