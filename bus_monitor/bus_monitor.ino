@@ -4,6 +4,8 @@ const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
 #define RW 3
 #define IRQB 4
 
+#define BAUD_RATE 57600
+
 void setup() {
     for (int n = 0; n < 16; n += 1) {
         pinMode(ADDR[n], INPUT);
@@ -19,7 +21,7 @@ void setup() {
 
     attachInterrupt(digitalPinToInterrupt(CLK), onClock, RISING);
 
-    Serial.begin(57600);
+    Serial.begin(BAUD_RATE);
 }
 
 void onClock() {
