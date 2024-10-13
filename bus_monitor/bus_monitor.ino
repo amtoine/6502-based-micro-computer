@@ -1,7 +1,7 @@
 const char ADDR[] = {22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52};
 const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
-#define CLOCK 2
-#define READ_WRITE 3
+#define CLK 2
+#define RW 3
 #define IRQB 4
 
 void setup() {
@@ -11,11 +11,11 @@ void setup() {
   for (int n = 0; n < 8; n += 1) {
     pinMode(DATA[n], INPUT);
   }
-  pinMode(CLOCK, INPUT);
-  pinMode(READ_WRITE, INPUT);
+  pinMode(CLK, INPUT);
+  pinMode(RW, INPUT);
   pinMode(IRQB, INPUT);
 
-  attachInterrupt(digitalPinToInterrupt(CLOCK), onClock, RISING);
+  attachInterrupt(digitalPinToInterrupt(CLK), onClock, RISING);
   
   Serial.begin(57600);
 }
@@ -39,7 +39,7 @@ void onClock() {
     data = (data << 1) + bit;
   }
 
-  sprintf(output, "   %04x  %c %c %02x", address, digitalRead(READ_WRITE) ? 'r' : 'W', digitalRead(IRQB) ? '.' : 'I', data);
+  sprintf(output, "   %04x  %c %c %02x", address, digitalRead(RW) ? 'r' : 'W', digitalRead(IRQB) ? '.' : 'I', data);
   Serial.println(output);  
 }
 
